@@ -30,7 +30,7 @@ const Home = () => {
                     <Card.Img  variant="top" src={pizza.img} />
                     <Card.Body>
                         <Card.Title>
-                        <strong>{pizza.name}</strong>
+                        <strong className='nombre-pizza'>{pizza.name}</strong>
                         </Card.Title>
                         <ListGroup>
                         {pizza.ingredients.map((ingredient, index) => (
