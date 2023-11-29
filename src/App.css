@@ -1,0 +1,101 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+.header-pizzas-dani{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/banner-dani-pizza.jpg');
+  background-size: cover;
+  background-color: black;
+  height: 11rem;
+  color: white;
+  font-size: 3rem;
+  line-height: 4;
+  font-weight: bold;
+}
+
+
+
+.cards-container-home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 1.5rem; 
+  margin-top: 2%;
+}
+
+
+.card {
+  padding: 2em;
+  min-width: 25% !important;
+}
+
+.card-dani-home{
+  width: calc(33.333% - 1rem); /* Calcula el ancho para mostrar 3 tarjetas por fila */
+  max-width: 300px; /* Ancho máximo para cada tarjeta */
+  margin-bottom: 1.5rem; /* Espaciado entre las tarjetas */
+}
+
+.nav-pizzas-dani{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #27c1c1;
+  color: #ffffff;
+}
+
+.nav-pizzas-dani img{
+  width: 15%;
+  margin-right: 5%;
+}
+
+.detail-card-dani{
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  margin: auto;
+}
+
+.container-detail-card-dani{
+  width: 100%;
+  margin: auto;
+  padding: 2%;
+
+}
+
+.td-dani img{
+  height: 4rem;
+}
+
+
+@media screen and (max-width: 992px) {
+  .card-dani-home {
+    width: calc(50% - 1rem); /* Para pantallas más pequeñas, mostrar 2 tarjetas por fila */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-dani-home {
+    width: 100%; /* En pantallas pequeñas, mostrar una tarjeta por fila */
+  }
+}
